@@ -13,11 +13,17 @@
 
 .content {
   margin-left: 40px;
+
+}
+
+.post-edit {
+  float: right;
 }
 
 .post-info {
   color: #828282;
-  padding-bottom: 5px;
+  background-color: #EAEAEA;
+  padding: 5px 5px 5px 5px;
 }
 
 .save {
