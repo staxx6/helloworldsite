@@ -15,6 +15,7 @@
       <p class="top-menu">Hello {{ user.username }} <small>(<a href="{% url 'logout' %}">Log out</a>)</small></p>
       {% else %}
       <a href="{% url 'login' %}" class="top-menu"><span class="glyphicon glyphicon-lock"></span></a>
+      <a href="{% url 'user_registration' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
       {% endif %}
       <h1><a href="/">Djangos Blog</a></h1>
     </div>

@@ -2,6 +2,8 @@ from django.urls import path
 
 from . import views
 
+from userhandling import views as user_views
+
 urlpatterns = [
     path('', views.post_list, name='post_list'),
 
@@ -16,4 +18,6 @@ urlpatterns = [
     path('post/<int:pk>/comment', views.add_comment_to_post, name='add_comment_to_post'),
     path('post/<int:pk>/approve', views.comment_approve, name='comment_approve'),
     path('post/<int:pk>/remove', views.comment_remove, name='comment_remove'),
+
+    path('user/registration', user_views.user_registration, name="user_registration"),
 ]
